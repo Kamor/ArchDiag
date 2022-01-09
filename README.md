@@ -1,7 +1,7 @@
 # ArchDiag
 Diagnose tool for the arch data from www.daimonin.org
 
-This is my idea of cleaning and sorting the arch data
+This is my idea of cleaning and sorting the arch data. I also learned a lot of coding and had some fun.
 
 ## v0.1
 - console command interface
