@@ -1,4 +1,4 @@
-// archdiag v0.1 - kamor (dolfo) - 08-01-2022
+// archdiag v0.1 - kamor (dolfo) - 09-01-2022
 // clean and sort .arc file definitions
 // has a small user command interface
 
