@@ -8,7 +8,7 @@ This is my idea of cleaning and sorting the arch data. I also learned a lot of c
 - command h = show commands
 - command p = set path (primary path = absolut)
 - command a = set archpath (secondary path = relativ)
-- command i = init (reinit path, arch and proto definitions when you made changes from outside)
+- command i = init (reinit path, arch and proto definitions, when you made changes from outside)
 - command s = simulate (this helps finding errors in code or in data, it works readonly to files)
 - command b = backup (make backup first of all .arc files)
 - command d = delete (delete the backup files)
