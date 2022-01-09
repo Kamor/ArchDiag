@@ -1,25 +1,33 @@
 // archdiag v0.1 - kamor (dolfo) - 09-01-2022
+// diagnose tool for the arch data from www.daimonin.org
 // clean and sort .arc file definitions
 // has a small user command interface
 
-// use only on arch/items or other test folders in arch
-// don't use it on files you want to keep human sorted (unsorted)
-// script can't handle comments
-// script can't handle object in object definitions
-// set path to trunk and arch/item folder
-// this will be stored in path.ini and arch.ini
-
-// go first command simulate to find problems
-// if getX missing definitions, update order[ORDERMAX] and ORDERMAX
-// order array needs some more logic work how to sort best.
-// like do lowlevel like face, animation definition first, do the most unique stuff at the end
-// this could be adjusted later again, script can resort files
+// set path and arch path first
+// simulate first to find problems
+// if getX says missing definitions, you can edit proto.arc
+// if you find other errors you can fix the .arc files there
+// TODO : archdiag can't handle standalone comment lines inside objects, but you can put comments at the line ends behind the commands
 // if simulate looks good
-
 // you can make first backups of .arc files using backup command
-// using Sort command is real overwriting the .arc files
+// using Sort command overwriting the .arc files
 // if you have backup you can Restore this
 // and you have option to delete all backup files
+
+// console command interface
+// command h = show commands
+// command p = set path (primary path = absolut)
+// command a = set archpath (secondary path = relativ)
+// command i = init (reinit path, arch and proto definitions, when you made changes from outside)
+// command s = simulate (this helps finding errors in code or in data, it works readonly to files)
+// command b = backup (make backup first of all .arc files)
+// command d = delete (delete the backup files)
+// command S = Sort (clean and sort all .arc files)
+// command R = Restore (copy backup files to .arc files)
+
+// path.ini, arch.ini and proto.arc can be changed from outside
+// proto.arc defines the order, how Sort will sort the .arc files
+// archdiag.log is logfile for errors
 
 #include <string>
 #include <iostream>
